@@ -1,8 +1,8 @@
-21:41:42 **** Incremental Build of configuration Debug for project videoImageTest ****
+21:09:49 **** Incremental Build of configuration Debug for project videoImageTest ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-21:41:42 Build Finished (took 324ms)
+21:09:49 Build Finished (took 339ms)
 

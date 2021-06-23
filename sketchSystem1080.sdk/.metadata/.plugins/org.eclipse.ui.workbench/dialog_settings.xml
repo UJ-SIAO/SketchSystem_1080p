@@ -26,6 +26,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="G:\My Drive"/>
 			<item value="D:\GitCode\Sketch_IP_1080p"/>
 			<item value="D:\imageProcessingVideoOut-master\sw"/>
 		</list>
