@@ -74,6 +74,7 @@ int drawImage(u32 displayHSize,u32 displayVSize,u32 imageHSize,u32 imageVSize,u3
 
 int initImgProcessSystem(imgProcess *imgProcessInstance, u32 axiDmaBaseAddress,XScuGic *Intc){
 	int status;
+	imgProcessInstance->row = 4;
 	XAxiDma_Config *myDmaConfig;
 	XAxiDma myDma;
 	myDmaConfig = XAxiDma_LookupConfigBaseAddr(axiDmaBaseAddress);
@@ -119,7 +120,7 @@ int initImgProcessSystem(imgProcess *imgProcessInstance, u32 axiDmaBaseAddress,X
 int startImageProcessing(imgProcess *imgProcessInstance){
 	int status;
 	//status = XAxiDma_SimpleTransfer(imgProcessInstance->DmaCtrlPointer,(u32)imgProcessInstance->filteredImageDataPointer,(imgProcessInstance->imageHSize)*(imgProcessInstance->imageVSize),XAXIDMA_DEVICE_TO_DMA);
-	status = XAxiDma_SimpleTransfer(imgProcessInstance->DmaCtrlPointer,(u32)imgProcessInstance->filteredImageDataPointer,(1920*1080),XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(imgProcessInstance->DmaCtrlPointer,(u32)imgProcessInstance->filteredImageDataPointer,(1920*1080*2),XAXIDMA_DEVICE_TO_DMA);
 	if(status != XST_SUCCESS){
 		xil_printf("DMA Receive Failed with Status %d\n",status);
 		return -1;
@@ -172,18 +173,25 @@ u32 checkIdle(u32 baseAddress,u32 offset){
  *****************************************************************************/
 
 static void imageProcISR(void *CallBackRef){
-	static int i=4;
+	//static int row= 4;
 	int status;
 	XScuGic_Disable(((imgProcess*)CallBackRef)->IntrCtrlPointer,XPAR_FABRIC_SKETCHIP_1080P_0_O_INTR_INTR);
 	status = checkIdle(XPAR_AXI_DMA_0_BASEADDR,0x4);
 	while(status == 0)
 		status = checkIdle(XPAR_AXI_DMA_0_BASEADDR,0x4);
-	if(i<1082){
+	if(((imgProcess*)CallBackRef)->row<(1082*2)){
 		//print("ccc\n");
-		status = XAxiDma_SimpleTransfer(((imgProcess*)CallBackRef)->DmaCtrlPointer,(u32)(((imgProcess*)CallBackRef)->imageDataPointer)+i*((imgProcess*)CallBackRef)->imageHSize,((imgProcess*)CallBackRef)->imageHSize,XAXIDMA_DMA_TO_DEVICE);
-		i++;
-		//printf("i = %d \n",i);
+		if(((imgProcess*)CallBackRef)->row < 1082)
+			status = XAxiDma_SimpleTransfer(((imgProcess*)CallBackRef)->DmaCtrlPointer,(u32)(((imgProcess*)CallBackRef)->imageDataPointer)+(((imgProcess*)CallBackRef)->row)*((imgProcess*)CallBackRef)->imageHSize,((imgProcess*)CallBackRef)->imageHSize,XAXIDMA_DMA_TO_DEVICE);
+		else if(((imgProcess*)CallBackRef)->row >= 1082){
+			status = XAxiDma_SimpleTransfer(((imgProcess*)CallBackRef)->DmaCtrlPointer,(u32)(((imgProcess*)CallBackRef)->imageDataPointer2)+((((imgProcess*)CallBackRef)->row) - 1082)*((imgProcess*)CallBackRef)->imageHSize,((imgProcess*)CallBackRef)->imageHSize,XAXIDMA_DMA_TO_DEVICE);
+			//printf("row = %d \n",((imgProcess*)CallBackRef)->row);
+		}
+		((imgProcess*)CallBackRef)->row++;
+		//printf("row = %d \n",((imgProcess*)CallBackRef)->row);
 	}
+	/*if(row == 1082)
+		row=4;*/
 	XScuGic_Enable(((imgProcess*)CallBackRef)->IntrCtrlPointer,XPAR_FABRIC_SKETCHIP_1080P_0_O_INTR_INTR);
 }
 

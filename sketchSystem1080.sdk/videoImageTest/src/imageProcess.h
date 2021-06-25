@@ -8,12 +8,15 @@
 
 typedef struct{
 	char *imageDataPointer;
+	char *imageDataPointer2;
 	char *filteredImageDataPointer;
+	char *filteredImageDataPointer2;
 	XAxiDma *DmaCtrlPointer;
 	XScuGic *IntrCtrlPointer;
 	u32 imageHSize;
 	u32 imageVSize;
 	u32 done;
+	u32 row;
 }imgProcess;
 
 int initImgProcessSystem(imgProcess *imgProcessInstance,u32 axiDmaBaseAddress,XScuGic *Intc);

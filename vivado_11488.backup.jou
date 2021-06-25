@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 23 19:25:42 2021
+# Process ID: 11488
+# Current directory: D:/GitCode/SketchSystem_1080p
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6620 D:\GitCode\SketchSystem_1080p\sketchSystem1080.xpr
+# Log file: D:/GitCode/SketchSystem_1080p/vivado.log
+# Journal file: D:/GitCode/SketchSystem_1080p\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitCode/SketchSystem_1080p/sketchSystem1080.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace D:/GitCode/SketchSystem_1080p/sketchSystem1080.sdk -hwspec D:/GitCode/SketchSystem_1080p/sketchSystem1080.sdk/system_wrapper.hdf

@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="XPAR_FABRIC_SKETCHIP_1080P_0_O_INTR_INTR" key="selection"/>
+		<item value="filteredImage" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="filteredImage"/>
+			<item value="S2MM"/>
+			<item value="Mm2S"/>
+			<item value="MM2S"/>
 			<item value="XPAR_FABRIC_SOBEL_0_O_INTR_INTR"/>
 			<item value="XPAR_FABRIC"/>
 			<item value="XPAR_FABRIC_"/>
@@ -19,10 +23,10 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="344" key="DIALOG_WIDTH"/>
-		<item value="1|Microsoft JhengHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft JhengHei UI" key="DIALOG_FONT_NAME"/>
-		<item value="442" key="DIALOG_HEIGHT"/>
-		<item value="797" key="DIALOG_X_ORIGIN"/>
-		<item value="230" key="DIALOG_Y_ORIGIN"/>
+		<item value="336" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="1172" key="DIALOG_X_ORIGIN"/>
+		<item value="516" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
