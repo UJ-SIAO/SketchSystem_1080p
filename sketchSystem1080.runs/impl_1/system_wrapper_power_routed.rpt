@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue Jun 22 20:40:26 2021
+| Date             : Tue Jun 29 19:51:12 2021
 | Host             : DESKTOP-RE08DTS running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.942        |
+| Total On-Chip Power (W)  | 1.940        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.793        |
+| Dynamic (W)              | 1.791        |
 | Device Static (W)        | 0.149        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 62.6         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.060 |        6 |       --- |             --- |
-| Slice Logic              |     0.017 |    30800 |       --- |             --- |
-|   LUT as Logic           |     0.014 |    10017 |     53200 |           18.83 |
+| Clocks                   |     0.059 |        6 |       --- |             --- |
+| Slice Logic              |     0.018 |    30527 |       --- |             --- |
+|   LUT as Logic           |     0.015 |     9911 |     53200 |           18.63 |
 |   LUT as Distributed RAM |     0.001 |     5062 |     17400 |           29.09 |
-|   CARRY4                 |    <0.001 |      555 |     13300 |            4.17 |
-|   Register               |    <0.001 |    10811 |    106400 |           10.16 |
-|   LUT as Shift Register  |    <0.001 |      307 |     17400 |            1.76 |
-|   F7/F8 Muxes            |    <0.001 |      275 |     53200 |            0.52 |
-|   Others                 |     0.000 |     1039 |       --- |             --- |
-| Signals                  |     0.053 |    21538 |       --- |             --- |
+|   CARRY4                 |    <0.001 |      519 |     13300 |            3.90 |
+|   Register               |    <0.001 |    10800 |    106400 |           10.15 |
+|   LUT as Shift Register  |    <0.001 |      305 |     17400 |            1.75 |
+|   F7/F8 Muxes            |    <0.001 |      307 |     53200 |            0.58 |
+|   Others                 |     0.000 |     1042 |       --- |             --- |
+| Signals                  |     0.051 |    21332 |       --- |             --- |
 | Block RAM                |     0.007 |        9 |       140 |            6.43 |
 | MMCM                     |     0.117 |        1 |         4 |           25.00 |
 | I/O                      |     0.000 |       14 |       200 |            7.00 |
 | PS7                      |     1.539 |        1 |       --- |             --- |
 | Static Power             |     0.149 |          |           |                 |
-| Total                    |     1.942 |          |           |                 |
+| Total                    |     1.940 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.154 |       0.136 |      0.017 |
+| Vccint    |       1.000 |     0.151 |       0.134 |      0.017 |
 | Vccaux    |       1.800 |     0.081 |       0.065 |      0.016 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -156,12 +156,12 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                              | Power (W) |
 +---------------------------------------------------------------------------------------------------+-----------+
-| system_wrapper                                                                                    |     1.793 |
-|   system_i                                                                                        |     1.793 |
-|     SketchIP_1080p_0                                                                              |     0.057 |
-|       inst                                                                                        |     0.057 |
-|         IC                                                                                        |     0.052 |
-|           lB0                                                                                     |     0.012 |
+| system_wrapper                                                                                    |     1.791 |
+|   system_i                                                                                        |     1.791 |
+|     SketchIP_1080p_0                                                                              |     0.055 |
+|       inst                                                                                        |     0.055 |
+|         IC                                                                                        |     0.050 |
+|           lB0                                                                                     |     0.013 |
 |             line_reg_r1_0_63_0_2                                                                  |    <0.001 |
 |             line_reg_r1_0_63_3_5                                                                  |    <0.001 |
 |             line_reg_r1_0_63_6_6                                                                  |    <0.001 |
@@ -883,7 +883,7 @@ Table of Contents
 |             line_reg_r3_960_1023_3_5                                                              |    <0.001 |
 |             line_reg_r3_960_1023_6_6                                                              |    <0.001 |
 |             line_reg_r3_960_1023_7_7                                                              |    <0.001 |
-|           lB2                                                                                     |     0.014 |
+|           lB2                                                                                     |     0.012 |
 |             line_reg_r1_0_63_0_2                                                                  |    <0.001 |
 |             line_reg_r1_0_63_3_5                                                                  |    <0.001 |
 |             line_reg_r1_0_63_6_6                                                                  |    <0.001 |
@@ -1642,7 +1642,7 @@ Table of Contents
 |           GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                           |    <0.001 |
 |           GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER                                                  |    <0.001 |
 |           GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER                                                  |    <0.001 |
-|         I_PRMRY_DATAMOVER                                                                         |     0.012 |
+|         I_PRMRY_DATAMOVER                                                                         |     0.011 |
 |           GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER                                                       |     0.004 |
 |             ENABLE_AXIS_SKID.I_MM2S_SKID_BUF                                                      |    <0.001 |
 |             GEN_INCLUDE_MM2S_SF.I_RD_SF                                                           |     0.003 |
@@ -2364,7 +2364,7 @@ Table of Contents
 |                 gen_normal_area.inst_fifo_send                                                    |    <0.001 |
 |               inst_si_handler                                                                     |    <0.001 |
 |                 inst_arb_stall_late                                                               |    <0.001 |
-|         s02_entry_pipeline                                                                        |     0.005 |
+|         s02_entry_pipeline                                                                        |     0.004 |
 |           s02_mmu                                                                                 |     0.004 |
 |             inst                                                                                  |     0.004 |
 |               ar_reg_stall                                                                        |    <0.001 |
@@ -2622,7 +2622,7 @@ Table of Contents
 |                 cmd_translator_0                                                                  |    <0.001 |
 |                   incr_cmd_0                                                                      |    <0.001 |
 |                   wrap_cmd_0                                                                      |    <0.001 |
-|               RD.r_channel_0                                                                      |     0.001 |
+|               RD.r_channel_0                                                                      |    <0.001 |
 |                 rd_data_fifo_0                                                                    |    <0.001 |
 |                 transaction_fifo_0                                                                |    <0.001 |
 |               SI_REG                                                                              |     0.001 |

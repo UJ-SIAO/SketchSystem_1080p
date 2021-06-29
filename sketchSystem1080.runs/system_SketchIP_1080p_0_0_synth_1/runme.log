@@ -1,0 +1,949 @@
+
+*** Running vivado
+    with args -log system_SketchIP_1080p_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_SketchIP_1080p_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_SketchIP_1080p_0_0.tcl -notrace
+Command: synth_design -top system_SketchIP_1080p_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 353.281 ; gain = 103.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_SketchIP_1080p_0_0' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/synth/system_SketchIP_1080p_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'imageProcessTop' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageProcessTop.v:23]
+INFO: [Synth 8-638] synthesizing module 'imageControl' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageControl.v:23]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter RD_BUFFER bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lineBuffer' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'lineBuffer' (1#1) [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'imageControl' (2#1) [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageControl.v:23]
+INFO: [Synth 8-638] synthesizing module 'conv1' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:23]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[8] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[7] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[6] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[5] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[3] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[2] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[1] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element multData3_reg[0] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:155]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[8]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[7]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[6]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[5]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[4]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[3]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[2]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[1]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+WARNING: [Synth 8-3936] Found unconnected internal register 'curved_data_reg[0]' and it is trimmed from '16' to '8' bits. [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:124]
+INFO: [Synth 8-256] done synthesizing module 'conv1' (3#1) [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:23]
+INFO: [Synth 8-638] synthesizing module 'outputBuffer' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/sources_1/ip/outputBuffer/synth/outputBuffer.vhd:75]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 18 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 18 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 512x36 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 8 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 64 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 6 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 15 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 43 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 14 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 14 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 14 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 62 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_1' declared at 'd:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/sources_1/ip/outputBuffer/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_1' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/sources_1/ip/outputBuffer/synth/outputBuffer.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1045]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1097]
+INFO: [Synth 8-256] done synthesizing module 'xpm_cdc_sync_rst' (4#1) [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1045]
+INFO: [Synth 8-256] done synthesizing module 'outputBuffer' (30#1) [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/sources_1/ip/outputBuffer/synth/outputBuffer.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'imageProcessTop' (31#1) [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageProcessTop.v:23]
+INFO: [Synth 8-256] done synthesizing module 'system_SketchIP_1080p_0_0' (32#1) [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/synth/system_SketchIP_1080p_0_0.v:57]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port FULL
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port RAM_ALMOST_FULL
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_PNTR[5]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_PNTR[4]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_PNTR[3]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_PNTR[2]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_PNTR[1]
+WARNING: [Synth 8-3331] design wr_pf_ss has unconnected port WR_PNTR[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design rd_bin_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_BUSY
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design rd_logic has unconnected port ALMOST_FULL_FB
+WARNING: [Synth 8-3331] design rd_logic has unconnected port FULL
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[33]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:45 ; elapsed = 00:04:13 . Memory (MB): peak = 633.809 ; gain = 384.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:46 ; elapsed = 00:04:14 . Memory (MB): peak = 633.809 ; gain = 384.254
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/sources_1/ip/outputBuffer/outputBuffer.xdc] for cell 'inst/OB/U0'
+Finished Parsing XDC File [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/sources_1/ip/outputBuffer/outputBuffer.xdc] for cell 'inst/OB/U0'
+Parsing XDC File [D:/GitCode/SketchSystem_1080p/sketchSystem1080.runs/system_SketchIP_1080p_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/GitCode/SketchSystem_1080p/sketchSystem1080.runs/system_SketchIP_1080p_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/GitCode/SketchSystem_1080p/sketchSystem1080.runs/system_SketchIP_1080p_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_SketchIP_1080p_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_SketchIP_1080p_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 771.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:04:24 ; elapsed = 00:04:59 . Memory (MB): peak = 771.922 ; gain = 522.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:24 ; elapsed = 00:04:59 . Memory (MB): peak = 771.922 ; gain = 522.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/OB/U0. (constraint file  D:/GitCode/SketchSystem_1080p/sketchSystem1080.runs/system_SketchIP_1080p_0_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property DONT_TOUCH = true for inst/OB. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/OB/U0/inst_fifo_gen/\gaxis_fifo.gaxisf.axisf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:24 ; elapsed = 00:04:59 . Memory (MB): peak = 771.922 ; gain = 522.367
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element wrPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:44]
+WARNING: [Synth 8-6014] Unused sequential element rdPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:50]
+INFO: [Synth 8-4471] merging register 'rdState_reg' into 'rd_line_buffer_reg' [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageControl.v:71]
+WARNING: [Synth 8-6014] Unused sequential element rdState_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageControl.v:71]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/imageControl.v:60]
+INFO: [Synth 8-5546] ROM "rdState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[8] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[7] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[6] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[5] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[4] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[3] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[2] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[1] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+WARNING: [Synth 8-6014] Unused sequential element i_pixel_data_light_s1_threshold_reg[0] was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/conv1.v:112]
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:27 ; elapsed = 00:05:02 . Memory (MB): peak = 771.922 ; gain = 522.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 18    
+	   2 Input      8 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---Registers : 
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 10    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 80    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 39    
++---Muxes : 
+	   4 Input     72 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lineBuffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
+Module imageControl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     72 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+Module conv1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 9     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 79    
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module xpm_cdc_sync_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module reset_blk_ramfifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module blk_mem_gen_prim_width 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rd_fwft 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module wr_pf_ss 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "inst/IC/rdState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB0/rdPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB0/wrPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:44]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB1/rdPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB1/wrPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:44]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB2/rdPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB2/wrPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:44]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB3/rdPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/IC/lB3/wrPntr_reg was removed.  [d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ipshared/b795/sources_1/new/lineBuffer.v:44]
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[8][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[8][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[5][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[5][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[6][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[6][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[7][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[7][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[0][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[0][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[1][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[1][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[2][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[2][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[3][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[3][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[4][0]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/i_pixel_data_light_s1_threshold_reg[4][1]' (FD) to 'inst/conv1/i_pixel_data_light_s2_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/compared_data_reg[7][8]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[0]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[1]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[2]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[3]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[4]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[5]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/conv1/dodge_data_s1_reg[6]' (FD) to 'inst/conv1/dodge_data_s1_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/conv1 /\dodge_data_s1_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (compared_data_reg[8][11]) is unused and will be removed from module conv1.
+WARNING: [Synth 8-3332] Sequential element (compared_data_reg[8][10]) is unused and will be removed from module conv1.
+WARNING: [Synth 8-3332] Sequential element (compared_data_reg[8][9]) is unused and will be removed from module conv1.
+WARNING: [Synth 8-3332] Sequential element (compared_data_reg[8][8]) is unused and will be removed from module conv1.
+WARNING: [Synth 8-3332] Sequential element (dodge_data_s1_reg[7]) is unused and will be removed from module conv1.
+WARNING: [Synth 8-3332] Sequential element (inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.gpf.wrpf/gdiff.gcry_1_sym.diff_pntr_pad_reg[0]) is unused and will be removed from module fifo_generator_v13_2_1.
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[0]' (FDS) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[1]' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[2]' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4]' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:58 ; elapsed = 00:05:38 . Memory (MB): peak = 771.922 ; gain = 522.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------------------+----------------------+-----------+----------------------+--------------------------------+
+|Module Name               | RTL Object           | Inference | Size (Depth x Width) | Primitives                     | 
++--------------------------+----------------------+-----------+----------------------+--------------------------------+
+|system_SketchIP_1080p_0_0 | inst/IC/lB3/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
+|system_SketchIP_1080p_0_0 | inst/IC/lB0/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
+|system_SketchIP_1080p_0_0 | inst/IC/lB1/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
+|system_SketchIP_1080p_0_0 | inst/IC/lB2/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
++--------------------------+----------------------+-----------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:26 ; elapsed = 00:06:09 . Memory (MB): peak = 791.273 ; gain = 541.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:27 ; elapsed = 00:06:10 . Memory (MB): peak = 796.645 ; gain = 547.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++--------------------------+----------------------+-----------+----------------------+--------------------------------+
+|Module Name               | RTL Object           | Inference | Size (Depth x Width) | Primitives                     | 
++--------------------------+----------------------+-----------+----------------------+--------------------------------+
+|system_SketchIP_1080p_0_0 | inst/IC/lB3/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
+|system_SketchIP_1080p_0_0 | inst/IC/lB0/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
+|system_SketchIP_1080p_0_0 | inst/IC/lB1/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
+|system_SketchIP_1080p_0_0 | inst/IC/lB2/line_reg | Implied   | 2 K x 8              | RAM64X1D x 180  RAM64M x 180   | 
++--------------------------+----------------------+-----------+----------------------+--------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[5]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[4]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[3]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[2]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[1]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[0]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[5]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[4]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[3]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[2]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[1]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[0]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[5]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[4]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[3]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[2]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[1]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[0]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[5]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[4]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[3]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[2]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[1]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[0]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[6]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[7]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[8]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[9]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB3/rdPntr_reg_rep[10]' (FDRE) to 'inst/IC/lB3/rdPntr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[6]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[7]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[8]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[9]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB1/rdPntr_reg_rep[10]' (FDRE) to 'inst/IC/lB1/rdPntr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[6]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[7]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[8]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[9]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB0/rdPntr_reg_rep[10]' (FDRE) to 'inst/IC/lB0/rdPntr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[6]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[7]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[8]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[9]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/IC/lB2/rdPntr_reg_rep[10]' (FDRE) to 'inst/IC/lB2/rdPntr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.POR_A_reg' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.POR_B_reg'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_reg' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENB_NO_REG.ENB_dly_reg'
+INFO: [Synth 8-3886] merging instance 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENA_NO_REG.ENA_dly_D_reg' (FD) to 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.ENB_NO_REG.ENB_dly_D_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:35 ; elapsed = 00:06:20 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:41 ; elapsed = 00:06:27 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:41 ; elapsed = 00:06:27 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:42 ; elapsed = 00:06:28 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:42 ; elapsed = 00:06:28 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:42 ; elapsed = 00:06:28 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:42 ; elapsed = 00:06:28 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name               | RTL Name                                                                                                                                                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fifo_generator_v13_2_1    | inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|system_SketchIP_1080p_0_0 | inst/conv1/multData1_s5_reg[7]                                                                                                                                                                                    | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|system_SketchIP_1080p_0_0 | inst/conv1/lonely_data_reg[2][7]                                                                                                                                                                                  | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|system_SketchIP_1080p_0_0 | inst/conv1/o_convolved_data_valid_reg                                                                                                                                                                             | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   283|
+|2     |LUT1     |   354|
+|3     |LUT2     |   501|
+|4     |LUT3     |   921|
+|5     |LUT4     |   298|
+|6     |LUT5     |   667|
+|7     |LUT6     |  1035|
+|8     |MUXF7    |   224|
+|9     |MUXF8    |    64|
+|10    |RAM64M   |   720|
+|11    |RAM64X1D |   720|
+|12    |RAMB18E1 |     1|
+|13    |SRL16E   |    18|
+|14    |FDRE     |   850|
+|15    |FDSE     |    93|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------------------------------+-----------------------------+------+
+|      |Instance                                                                       |Module                       |Cells |
++------+-------------------------------------------------------------------------------+-----------------------------+------+
+|1     |top                                                                            |                             |  6749|
+|2     |  inst                                                                         |imageProcessTop              |  5786|
+|3     |    OB                                                                         |outputBuffer                 |   124|
+|4     |      U0                                                                       |fifo_generator_v13_2_1       |   124|
+|5     |        inst_fifo_gen                                                          |fifo_generator_v13_2_1_synth |   124|
+|6     |          \gaxis_fifo.gaxisf.axisf                                             |fifo_generator_top           |   124|
+|7     |            \grf.rf                                                            |fifo_generator_ramfifo       |   124|
+|8     |              \gntv_or_sync_fifo.gl0.rd                                        |rd_logic                     |    38|
+|9     |                \gr1.gr1_int.rfwft                                             |rd_fwft                      |    18|
+|10    |                \grss.rsts                                                     |rd_status_flags_ss           |     2|
+|11    |                rpntr                                                          |rd_bin_cntr                  |    18|
+|12    |              \gntv_or_sync_fifo.gl0.wr                                        |wr_logic                     |    54|
+|13    |                \gwss.gpf.wrpf                                                 |wr_pf_ss                     |    13|
+|14    |                \gwss.wsts                                                     |wr_status_flags_ss           |     6|
+|15    |                wpntr                                                          |wr_bin_cntr                  |    35|
+|16    |              \gntv_or_sync_fifo.mem                                           |memory                       |    17|
+|17    |                \gbm.gbmg.gbmga.ngecc.bmg                                      |blk_mem_gen_v8_4_1           |     9|
+|18    |                  inst_blk_mem_gen                                             |blk_mem_gen_v8_4_1_synth     |     9|
+|19    |                    \gnbram.gnativebmg.native_blk_mem_gen                      |blk_mem_gen_top              |     9|
+|20    |                      \valid.cstr                                              |blk_mem_gen_generic_cstr     |     9|
+|21    |                        \ramloop[0].ram.r                                      |blk_mem_gen_prim_width       |     9|
+|22    |                          \prim_noinit.ram                                     |blk_mem_gen_prim_wrapper     |     2|
+|23    |              rstblk                                                           |reset_blk_ramfifo            |    15|
+|24    |                \ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst  |xpm_cdc_sync_rst             |     5|
+|25    |    IC                                                                         |imageControl                 |  4103|
+|26    |      lB0                                                                      |lineBuffer                   |  1014|
+|27    |      lB1                                                                      |lineBuffer_0                 |  1013|
+|28    |      lB2                                                                      |lineBuffer_1                 |   945|
+|29    |      lB3                                                                      |lineBuffer_2                 |  1015|
+|30    |    conv1                                                                      |conv1                        |  1558|
++------+-------------------------------------------------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:42 ; elapsed = 00:06:29 . Memory (MB): peak = 936.195 ; gain = 686.641
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 500 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:06:06 . Memory (MB): peak = 936.195 ; gain = 548.527
+Synthesis Optimization Complete : Time (s): cpu = 00:05:43 ; elapsed = 00:06:29 . Memory (MB): peak = 936.195 ; gain = 686.641
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2012 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/OB/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1440 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 720 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 720 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+115 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:54 ; elapsed = 00:06:42 . Memory (MB): peak = 936.195 ; gain = 698.152
+INFO: [Common 17-1381] The checkpoint 'D:/GitCode/SketchSystem_1080p/sketchSystem1080.runs/system_SketchIP_1080p_0_0_synth_1/system_SketchIP_1080p_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/GitCode/SketchSystem_1080p/sketchSystem1080.srcs/sources_1/bd/system/ip/system_SketchIP_1080p_0_0/system_SketchIP_1080p_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 29 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/GitCode/SketchSystem_1080p/sketchSystem1080.runs/system_SketchIP_1080p_0_0_synth_1/system_SketchIP_1080p_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_SketchIP_1080p_0_0_utilization_synth.rpt -pb system_SketchIP_1080p_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.367 . Memory (MB): peak = 936.195 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 29 19:30:56 2021...

@@ -7,10 +7,12 @@
 #include "xscugic.h"
 
 typedef struct{
-	char *imageDataPointer;
+	char *imageDataPointer1;
 	char *imageDataPointer2;
+	char *imageDataPointer3;
+	char *imageDataPointer4;
+	char *imageDataPointer5;
 	char *filteredImageDataPointer;
-	char *filteredImageDataPointer2;
 	XAxiDma *DmaCtrlPointer;
 	XScuGic *IntrCtrlPointer;
 	u32 imageHSize;
